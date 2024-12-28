@@ -20,6 +20,8 @@ variable  (R : Type*) [Field R]
   -- character
   (χ : (FiniteAdeleRing (𝓞 F) F)ˣ →* R)
 
+def AutomorphicForm.equiv : AutomorphicForm F D R W U χ ≃ₗ[R] Doset.doset
+
 theorem AutomorphicForm.finiteDimensional [FiniteDimensional R W] :
     FiniteDimensional R (AutomorphicForm F D R W U χ) := sorry
 
